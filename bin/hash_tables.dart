@@ -1,5 +1,8 @@
-import 'package:hash_tables/hash_tables.dart' as hash_tables;
+import 'package:hash_tables/linear_search.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${hash_tables.calculate()}!');
+void main() {
+  final myList = [42, 3, 10 ,7, 28, 149, 0, 3, 25, 7 , 1];
+  final foundIndex = linearSearch(myList, 28);
+
+  print(foundIndex);
 }
